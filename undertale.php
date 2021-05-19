@@ -104,8 +104,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="product__details__text">
-                        <h3>Undertale GameBlock <span>Brand: SaveBlock</span></h3>
+                    <div class="simpleCart_shelfItem product">
+                        <h3 class="item_name">Undertale GameBlock <span>Brand: SaveBlock</span></h3>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -114,16 +114,16 @@
                             <i class="fa fa-star"></i>
                             <span>( 17 reviews )</span>
                         </div>
-                        <div class="product__details__price">$ 55.0 <!--<span>$ 83.0</span>--></div>
+                        <div class="item_price">$55.0 <!--<span>$ 83.0</span>--></div>
                         <p>Get this. Sans but in a cube. You know you need this, and yes that is Sans' theme song playing. Don't look behind you.</p>
                         <div class="product__details__button">
-                            <div class="quantity">
+                            <div class="item_quantity">
                                 <span>Quantity:</span>
                                 <div class="pro-qty">
                                     <input type="text" value="1">
                                 </div>
                             </div>
-                            <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                           <span class="cart-btn"> <a href="javascript:;" class="item_add" style="color:white;">Add to cart</a></span>
                             <ul>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
@@ -296,7 +296,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                             </div>
-                            <div class="product__price">$ 55.0</div>
+                            <div class="product__price">$55.0</div>
                         </div>
                     </div>
                 </div>
@@ -435,6 +435,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="Project/script.js"></script>
+    <script src="js/simpleCart.js"></script>
 </body>
 
 </html>

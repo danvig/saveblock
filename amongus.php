@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+    <script src="js/simpleCart.js"></script>
+    <script src="js/simplecartjs-config.js"></script>
+
     <!-- PHP -->
     <?php  
         session_start();
@@ -123,7 +126,7 @@
                                     <input type="text" value="1">
                                 </div>
                             </div>
-                            <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                            <span class="cart-btn"> <a href="javascript:;" class="item_add" style="color:white;">Add to cart</a></span>
                             <ul>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>

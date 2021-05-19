@@ -7,7 +7,7 @@
     <meta name="keywords" content="Saveblock, gifts, toys, memories">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ashion | Template</title>
+    <title>SaveBlock | Cart</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
@@ -23,6 +23,20 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/simpleCart.js"></script>
 
     <!-- PHP -->
     <?php  
@@ -69,129 +83,71 @@
     <!-- Breadcrumb End -->
 
     <!-- Shop Cart Section Begin -->
+    
     <section class="shop-cart spad">
-        <div class="container">
-            <div class="row">
+    <div class="container">
+    <div class="row">
                 <div class="col-lg-12">
-                    <div class="shop__cart__table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Product</th>
-                                    <th>Price</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="cart__product__item">
-                                        <img src="img/shop-cart/cp-1.jpg" alt="">
-                                        <div class="cart__product__item__title">
-                                            <h6>Chain bucket bag</h6>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">$ 150.0</td>
-                                    <td class="cart__quantity">
-                                        <div class="pro-qty">
-                                            <input type="text" value="1">
-                                        </div>
-                                    </td>
-                                    <td class="cart__total">$ 300.0</td>
-                                    <td class="cart__close"><span class="icon_close"></span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cart__product__item">
-                                        <img src="img/shop-cart/cp-2.jpg" alt="">
-                                        <div class="cart__product__item__title">
-                                            <h6>Zip-pockets pebbled tote briefcase</h6>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">$ 170.0</td>
-                                    <td class="cart__quantity">
-                                        <div class="pro-qty">
-                                            <input type="text" value="1">
-                                        </div>
-                                    </td>
-                                    <td class="cart__total">$ 170.0</td>
-                                    <td class="cart__close"><span class="icon_close"></span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cart__product__item">
-                                        <img src="img/shop-cart/cp-3.jpg" alt="">
-                                        <div class="cart__product__item__title">
-                                            <h6>Black jean</h6>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">$ 85.0</td>
-                                    <td class="cart__quantity">
-                                        <div class="pro-qty">
-                                            <input type="text" value="1">
-                                        </div>
-                                    </td>
-                                    <td class="cart__total">$ 170.0</td>
-                                    <td class="cart__close"><span class="icon_close"></span></td>
-                                </tr>
-                                <tr>
-                                    <td class="cart__product__item">
-                                        <img src="img/shop-cart/cp-4.jpg" alt="">
-                                        <div class="cart__product__item__title">
-                                            <h6>Cotton Shirt</h6>
-                                            <div class="rating">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">$ 55.0</td>
-                                    <td class="cart__quantity">
-                                        <div class="pro-qty">
-                                            <input type="text" value="1">
-                                        </div>
-                                    </td>
-                                    <td class="cart__total">$ 110.0</td>
-                                    <td class="cart__close"><span class="icon_close"></span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+        <div class="span6">
+  
+  	<div class="product-Info">
+      <span class="simpleCart_quantity"></span> items 
+      
+    </div>
+       
+    <div id="myModal" class="modal hide fade">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3><span class="simpleCart_quantity"></span> items</h3>
+      </div>
+      <div class="modal-body">
+        <div class="simpleCart_items"></div>
+        <!-- Yep it's that simple -->
+        <hr>
+        <div class="left"><strong>Items: </strong><span class="simpleCart_quantity"></span></div>
+				<div class="right"><strong>Total: </strong><span class="simpleCart_total"></span></div>
+      </div>
+      <div class="modal-footer">
+        <a href="javascript:;" class="simpleCart_empty">Empty</a>
+        <a href="javascript:;" class="simpleCart_checkout">Checkout</a>
+      </div>
+    </div>
+    
+    
+
+    <div class="product-total">
+    
+      <p><b>Items:</b> <span class="simpleCart_quantity"></span></p>
+      <!--number of items in the cart-->
+      
+      <p><b>Total:</b> <span class="simpleCart_total"></span></p>
+      <!-- total cost of cart before tax & shipping-->
+      
+      <p><b>Tax rate:</b> <span class="simpleCart_taxRate"></span></p>
+      <!--will be display as a percentage ( ie 7% )-->
+      
+      <p><b>Tax:</b> <span class="simpleCart_tax"></span></p>
+      <!--taxRate X total displayed as currency-->
+      
+      <p><b>Final price:</b> <span class="simpleCart_grandTotal"></span> </p>
+      <!--total of the cart after tax & shipping -->
+      
+    </div>
+  </div><!-- /span6 -->
+    
+                                      
+                                 
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="cart__btn">
-                        <a href="#">Continue Shopping</a>
+                        <a href="shop.php">Continue Shopping</a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="cart__btn update__btn">
-                        <a href="#"><span class="icon_loading"></span> Update cart</a>
+                        <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
                     </div>
+                    <!-- <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p> -->
                 </div>
             </div>
             <div class="row">
@@ -208,15 +164,17 @@
                     <div class="cart__total__procced">
                         <h6>Cart total</h6>
                         <ul>
-                            <li>Subtotal <span>$ 750.0</span></li>
-                            <li>Total <span>$ 750.0</span></li>
+                            <p><b>Total:</b> <span class="simpleCart_total"></span></p>
+                            <p><b>Final price:</b> <span class="simpleCart_grandTotal"></span> </p>
+                            
                         </ul>
-                        <a href="#" class="primary-btn">Proceed to checkout</a>
+                        <a href="checkout.php" class="primary-btn">Proceed to checkout</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        </div>
+        </section>
     <!-- Shop Cart Section End -->
 
     <!-- Instagram Begin -->
@@ -304,6 +262,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
+<script src="script.js"></script>
 </body>
 
 </html>

@@ -75,8 +75,10 @@
                             <li><a href="./minecraft.php">Minecraft GameBlock</a></li>
                             <li><a href="./evangelion.php">Evangelion AniBlock</a></li>
                         </ul>
+                    <li><a href="./shop-cart.php">Cart</a></li>
+                    <li><a href="./chechout.php">Checkout</a></li>
+                    <li><a href="./subscribe.php">Subscribe</a></li>
                 </ul>
-                <li><a href="./subscribe.php">Subscribe</a></li>
             </div>
 
         </div>

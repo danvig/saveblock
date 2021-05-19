@@ -87,7 +87,7 @@
                                 </li>
                                 <li>
                                     <h6><i class="fa fa-headphones"></i> Support</h6>
-                                    <p>Support@saveblock.com</p>
+                                    <p>support@saveblock.com</p>
                                 </li>
                             </ul>
                         </div>
@@ -96,7 +96,7 @@
                             <form action="./sentemail.php">
                                 <input type="text" placeholder="Name" required>
                                 <input type="email" placeholder="Email" required>
-                                <input type="text" placeholder="Website">
+                                <input type="text" placeholder="Phone Number (optional)">
                                 <textarea placeholder="Message" required></textarea>
                                 <button type="submit" class="site-btn">Send Message</button>
                             </form>

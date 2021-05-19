@@ -1,3 +1,24 @@
+<?php
+    // Random generate quote for footer
+    // Original code: https://stackoverflow.com/questions/23437956/how-to-create-a-random-quotes-page-in-php/23438056
+    $quoteList = array(
+        "Dreams deserve to be saved and SaveBlock is turning that dream... into reality.", 
+        "At SaveBlock, we believe that your dreams, movements, and experiences are worth saving!", 
+        "All major credit cards accepted!", 
+        "The sky is the limit! The only limitation at SaveBlock is your imagination"
+    );
+
+    // Random page name for Featured Product
+    $productList = array(
+        "amongus.php",
+        "aot.php",
+        "evangelion.php",
+        "minecraft.php",
+        "simpsons.php",
+        "undertale.php"
+    );
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,9 +52,10 @@
                     <div class="footer__logo">
                         <a href="./index.php"><img src="img/logo.png" alt=""></a>
                     </div>
-                    <p>Dreams deserve to be saved and SaveBlock is turning
+                    <p><?php echo $quoteList[mt_rand(0, count($quoteList))]; ?></p>
+                    <!-- <p>Dreams deserve to be saved and SaveBlock is turning
                         that dream... into reality.
-                    </p>
+                    </p>-->
                     <div class="footer__payment">
                         <a href="#"><img src="img/payment/payment-1.png" alt=""></a>
                         <a href="#"><img src="img/payment/payment-2.png" alt=""></a>
@@ -61,7 +83,7 @@
                         <li><a href="subscribe.php">Subscribe</a></li>
                         <li><a href="shop.php">Catalogue</a></li>
                         <li><a href="shop-cart.php">Cart</a></li>
-                        <li><a href="minecraft.php">Featured Product</a></li>
+                        <li><a href=<?php echo $productList[mt_rand(0, count($productList))]; ?>>Featured Product</a></li>
                     </ul>
                 </div>
             </div>
@@ -73,11 +95,11 @@
                         <button type="submit" class="site-btn">Subscribe</button>
                     </form>
                     <div class="footer__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+                        <a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
                     </div>
                 </div>
             </div>

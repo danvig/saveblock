@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Saveblock Website">
-    <meta name="keywords" content="Saveblock, gifts, toys, memories">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SaveBlock</title>
+    <title>SaveBlock | Checkout</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
@@ -24,14 +24,18 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
-    <!-- PHP -->
-    <?php  
-        session_start();
-        if(!isset($_SESSION['username']))
-        {
-            header("Location: login.php");
-        }
-    ?>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/simpleCart.js"></script>
 </head>
 
 <body>
@@ -59,7 +63,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__links">
-                        <a href="./index.php"><i class="fa fa-home"></i> Home</a>
+                        <a href="./index.html"><i class="fa fa-home"></i> Home</a>
                         <span>Shopping cart</span>
                     </div>
                 </div>
@@ -72,202 +76,207 @@
     <section class="checkout spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h6 class="coupon__link"><span class="icon_tag_alt"></span> <a href="#">Have a coupon?</a> Click
-                    here to enter your code.</h6>
-                </div>
             </div>
-            <form action="#" class="checkout__form">
+            <form action="purchased.php" class="checkout__form">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h5>Billing detail</h5>
+                        <h5>Billing Details</h5>
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>First Name <span>*</span></p>
-                                    <input type="text">
+                                    <input type="text" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>Last Name <span>*</span></p>
-                                    <input type="text">
+                                    <input type="text" required>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="checkout__form__input">
-                                    <p>Country <span>*</span></p>
-                                    <input type="text">
-                                </div>
-                                <div class="checkout__form__input">
                                     <p>Address <span>*</span></p>
-                                    <input type="text" placeholder="Street Address">
+                                    <input type="text" placeholder="Street Address" required>
                                     <input type="text" placeholder="Apartment. suite, unite ect ( optinal )">
                                 </div>
                                 <div class="checkout__form__input">
-                                    <p>Town/City <span>*</span></p>
-                                    <input type="text">
+                                    <p>City <span>*</span></p>
+                                    <input type="text" required>
                                 </div>
                                 <div class="checkout__form__input">
-                                    <p>Country/State <span>*</span></p>
-                                    <input type="text">
+                                    <p>State <span>*</span></p>
+                                    <input type="text" required>
                                 </div>
                                 <div class="checkout__form__input">
                                     <p>Postcode/Zip <span>*</span></p>
-                                    <input type="text">
+                                    <input type="text" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>Phone <span>*</span></p>
-                                    <input type="text">
+                                    <input type="text" required>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="checkout__form__input">
                                     <p>Email <span>*</span></p>
-                                    <input type="text">
+                                    <input type="email" required>
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <div class="checkout__form__checkbox">
-                                    <label for="acc">
-                                        Create an acount?
-                                        <input type="checkbox" id="acc">
-                                        <span class="checkmark"></span>
+                                <h5 class="mb-3">Payments</h5>
+                                <div class="form-check">
+                                    <input id="creditCard" name="paymentMethod" type="radio"
+                                    class="form-check-input" checked required>
+                                    <label for="creditCard">Credit Card
                                     </label>
-                                    <p>Create am acount by entering the information below. If you are a returning
-                                        customer login at the <br />top of the page</p>
                                     </div>
-                                    <div class="checkout__form__input">
-                                        <p>Account Password <span>*</span></p>
-                                        <input type="text">
-                                    </div>
-                                    <div class="checkout__form__checkbox">
-                                        <label for="note">
-                                            Note about your order, e.g, special note for delivery
-                                            <input type="checkbox" id="note">
-                                            <span class="checkmark"></span>
+                                    <div class="form-check">
+                                        <input id="debitcard" name="paymentMethod" type="radio"
+                                        class="form-check-input" checked required>
+                                        <label for="debitCard">Debit Card
                                         </label>
                                     </div>
-                                    <div class="checkout__form__input">
-                                        <p>Order notes <span>*</span></p>
-                                        <input type="text"
-                                        placeholder="Note about your order, e.g, special note for delivery">
+                                    <div class="row my-3">
+                                        <div class="col-md-6">
+                                            Name on Card
+                                            <input type="text"
+                                            class="form-control" required>
+                                            <small class="text-muted">
+                                                Full name as displayed on card.
+                                            </small>
+                                            <div class="invalid-feedback">
+                                                Name on card is required.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            Credit Card Number
+                                            <input type="text"
+                                            class="form-control" required>
+                                            <div class="invalid-feedback">
+                                                Credit Card Number is required.
+                                            </div>
                                     </div>
+                                        <div class="col-md-3">
+                                            <label for="cc-expire"
+                                            class=form-label> Expiration
+                                        </label>
+                                        <input id="cc-expire"
+                                        type="text" class="form-control" required>
+                                        <div class="invalid-feedback">
+                                            Expiration is required
+                                        </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <label for="cc-cvv"
+                                            class=form-label> CVV
+                                        </label>
+                                        <input id="cc-cvv"
+                                        type="text" class="form-control" required>
+                                        <div class="invalid-feedback">
+                                            CVV is required
+                                        </div>
+                                        </div>
                                 </div>
-                            </div>
+                                </div>
+                        </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="checkout__order">
-                                <h5>Your order</h5>
-                                <div class="checkout__order__product">
-                                    <ul>
-                                        <li>
-                                            <span class="top__text">Product</span>
-                                            <span class="top__text__right">Total</span>
-                                        </li>
-                                        <li>01. Simpsons AniBlock <span>$ 55</span></li>
-                                        <li>02. Attack on Titan AniBlock <span>$ 55</span></li>
-                                        <li>03. Among Us GameBlock <span>$ 55</span></li>
-                                        <li>04. MineCraft GameBlock <span>$ 45</span></li>
-                                    </ul>
+                                <h5>Order Summary</h5>
+                                <div class="product-total">
+    
+                                    <p><b>Items:</b> <span class="simpleCart_quantity"></span></p>
+                                    <!--number of items in the cart-->
+                                    
+                                    <p><b>Total:</b> <span class="simpleCart_total"></span></p>
+                                    <!-- total cost of cart before tax & shipping-->
+                                    
+                                    <p><b>Tax rate:</b> <span class="simpleCart_taxRate"></span></p>
+                                    <!--will be display as a percentage ( ie 7% )-->
+                                    
+                                    <p><b>Tax:</b> <span class="simpleCart_tax"></span></p>
+                                    <!--taxRate X total displayed as currency-->
+                                    
+                                    <p><b>Final price:</b> <span class="simpleCart_grandTotal"></span> </p>
+                                    <!--total of the cart after tax & shipping -->
+                                    
                                 </div>
-                                <div class="checkout__order__total">
-                                    <ul>
-                                        <li>Subtotal <span>$ 210</span></li>
-                                        <li>Total <span>$ 210</span></li>
-                                    </ul>
+                                <div>
+                                    <a href="./purchased.php">
+                                        <input type="submit" value="Place Order" />
+                                     </a>
+                                  </form>
                                 </div>
-                                <div class="checkout__order__widget">
-                                    <label for="o-acc">
-                                        Create an acount?
-                                        <input type="checkbox" id="o-acc">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <p>Create am acount by entering the information below. If you are a returing customer
-                                    login at the top of the page.</p>
-                                    <label for="check-payment">
-                                        Cheque payment
-                                        <input type="checkbox" id="check-payment">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                    <label for="paypal">
-                                        PayPal
-                                        <input type="checkbox" id="paypal">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <button type="submit" class="site-btn">Place order</button>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
         </section>
-        <!-- Checkout Section End -->
 
         <!-- Instagram Begin -->
-        <div class="instagram">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-1.jpg">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ saveblock</a>
-                            </div>
-                        </div>
+<div class="instagram">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="img/instagram/insta-1.jpg">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ saveblock</a>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-2.jpg">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ saveblock</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="img/instagram/insta-2.jpg">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ saveblock</a>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-3.jpg">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ saveblock</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="img/instagram/insta-3.jpg">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ saveblock</a>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-4.jpg">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ saveblock</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="img/instagram/insta-4.jpg">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ saveblock</a>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-5.jpg">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ saveblock</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="img/instagram/insta-5.jpg">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ saveblock</a>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-4 p-0">
-                        <div class="instagram__item set-bg" data-setbg="img/instagram/insta-6.jpg">
-                            <div class="instagram__text">
-                                <i class="fa fa-instagram"></i>
-                                <a href="#">@ saveblock</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <div class="instagram__item set-bg" data-setbg="img/instagram/insta-6.jpg">
+                    <div class="instagram__text">
+                        <i class="fa fa-instagram"></i>
+                        <a href="#">@ saveblock</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Instagram End -->
+    </div>
+</div>
+<!-- Instagram End -->
 
         <!-- Footer Section Begin -->
-        <?php
-        require_once './includes/footer.php';
-        ?>
+<?php require_once './includes/footer.php';
+    ?>
         <!-- Footer Section End -->
 
         <!-- Search Begin -->
@@ -282,16 +291,6 @@
         <!-- Search End -->
 
         <!-- Js Plugins -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
-        <script src="js/mixitup.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/jquery.slicknav.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.nicescroll.min.js"></script>
-        <script src="js/main.js"></script>
     </body>
 
     </html>

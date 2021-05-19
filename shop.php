@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 
+    
+    
+    
     <!-- PHP -->
     <?php  
         session_start();
@@ -66,6 +69,7 @@
             </div>
         </div>
     </div>
+     
     <!-- Breadcrumb End -->
 
     <!-- Shop Section Begin -->
@@ -253,13 +257,13 @@
                 <div class="col-lg-9 col-md-9">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                            <div class="product__item">
+                            <div class="simpleCart_shelfItem product">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/product_gameblock_amongus.jpg">
                                     <div class="label new">New</div>
                                     <ul class="product__hover">
                                         <li><a href="img/shop/product_gameblock_amongus.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                                        <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                                        <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                                        <!--<li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                                        <li><span class="icon_bag_alt"> <a href="javascript:;" class="item_add"></a></span></li>-->
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -271,21 +275,26 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price">$ 55</div>
+                                      <span class="cart-btn"> <a href="javascript:;" class="item_add">Add to cart</a></span><br>
+                                    <div class="item_price">$55</div>
+                                  
                                 </div>
                             </div>
                         </div>
+                     
+                        
                         <div class="col-lg-4 col-md-6">
-                            <div class="product__item">
+                            <div class="simpleCart_shelfItem product">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/product_aniblock_aot.jpg">
                                     <ul class="product__hover">
                                         <li><a href="img/shop/product_aniblock_aot.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                                        <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                                        <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                                         <!--<li><a href="#"><span class="icon_heart_alt"></span></a></li>
+                                        <li><span class="icon_bag_alt"> <a href="javascript:;" class="item_add"></a></span></li>-->
+                                     
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="aot.php">Attack on Titan AniBlock</a></h6>
+                                    <h6><a href="aot.php" class="item_name">Attack on Titan AniBlock</a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -293,21 +302,25 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price">$ 55</div>
+                                    <span class="cart-btn"> <a href="javascript:;" class="item_add">Add to cart</a></span><br>
+                                    <span class="item_price">$55</span>
                                 </div>
                             </div>
                         </div>
+                       
+                        
                         <div class="col-lg-4 col-md-6">
-                            <div class="product__item">
+                            <div class="simpleCart_shelfItem product">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/product__gameblock_undertale.jpg">
                                     <ul class="product__hover">
                                         <li><a href="img/shop/product__gameblock_undertale.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
                                         <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                                        <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                                        <span class="icon_bag_alt"><a href="javascript:;" class="item_add"></a></span>
+                                        <span class="cart-btn"> <a href="javascript:;" class="item_add">Add to cart</a></span>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="undertale.php">Undertale GameBlock</a></h6>
+                                    <h6><a href="undertale.php" class="item_name">Undertale GameBlock</a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -315,21 +328,22 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price">$ 55</div>
+                                    <span class="cart-btn"> <a href="javascript:;" class="item_add">Add to cart</a></span><br>
+                                    <span class="item_price">$55</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="product__item">
+                        
+            <div class="col-lg-4 col-md-6">
+                            <div class="simpleCart_shelfItem product">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/product__aniblock_simpsons.jpg">
                                     <ul class="product__hover">
                                         <li><a href="img/shop/product__aniblock_simpsons.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                                        <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                                        <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                                        
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="simpsons.php">Simpsons AniBlock</a></h6>
+                                    <h6><a href="simpsons.php" class="item_name">Simpsons Aniblock</a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -337,22 +351,24 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price">$ 55</div>
+                                    <span class="cart-btn"> <a href="javascript:;" class="item_add">Add to cart</a></span><br>
+                                    <span class="item_price">$55</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="product__item">
+                             <div class="simpleCart_shelfItem product">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/product_gameblock_minecraft.jpg">
-                                    <div class="label stockout stockblue">Out Of Stock</div>
                                     <ul class="product__hover">
-                                        <li><a href="img/shop/product_gameblock_minecraft.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        <li><a href="img/shop/product_gameblock_minecraft.jpg" class="image-popup"><span class="arrow_expand">
+                                            <div class="label stockout stockblue">Out Of Stock</div></span></a></li>
                                         <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                                        <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                                        <span class="icon_bag_alt"><a href="javascript:;" class="item_add"></a></span>
+                                        <span class="cart-btn"> <a href="javascript:;" class="item_add">Add to cart</a></span>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="minecraft.php">MineCraft GameBlock</a></h6>
+                                    <h6><a href="minecraft.php" class="item_name">MineCraft GameBlock</a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -360,22 +376,23 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price">$ 55</div>
+                                    <span class="cart-btn"> <a href="javascript:;" class="item_add">Add to cart</a></span><br>
+                                    <span class="item_price">$55</span>
                                 </div>
                             </div>
+                           
                         </div>
-                        <div class="col-lg-4 col-md-6">
-                            <div class="product__item sale">
+                      <div class="col-lg-4 col-md-6">
+                             <div class="simpleCart_shelfItem product">
                                 <div class="product__item__pic set-bg" data-setbg="img/shop/product_aniblock_evangelion.jpg">
-                                    <div class="label">Sale</div>
                                     <ul class="product__hover">
-                                        <li><a href="img/shop/product_aniblock_evangelion.jpg" class="image-popup"><span class="arrow_expand"></span></a></li>
-                                        <li><a href="#"><span class="icon_heart_alt"></span></a></li>
-                                        <li><a href="#"><span class="icon_bag_alt"></span></a></li>
+                                        <li><a href="img/shop/product_aniblock_evangelion.jpg" class="image-popup"><span class="arrow_expand">
+                                            <div class="label">Sale</div></span>
+                                            </a>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="evangelion.php">Evangelion AniBlock</a></h6>
+                                    <h6><a href="evangelion.php" class="item_name">Evangelion AniBlock</a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
@@ -383,10 +400,13 @@
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>
                                     </div>
-                                    <div class="product__price">$ 45 <span>$ 55</span></div>
+                                    <span class="cart-btn"> <a href="javascript:;" class="item_add">Add to cart</a></span><br>
+                                    <span class="item_price">$55</span>
                                 </div>
                             </div>
+                           
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -470,7 +490,7 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
+ <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
@@ -480,6 +500,11 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="simpleCart.js"></script>
+    <script src="js/simpleCart.min.js"></script>
+   <script src="simplecartjs-config.js"></script>
+      <script src="script.js"></script>
 </body>
 
 </html>

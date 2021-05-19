@@ -61,7 +61,7 @@
                 <div class="col p-0">
                     <div class="categories__item categories__large__item set-bg"
                     data-setbg="img/categories/category-11.PNG">
-                        <h4><a href="shop.php" style="color:white; font-weight:strong;">SaveBlock: Everyone cares about something. Why not save it?</a></h4>
+                        <h4><a href="shop.php" style="color:white; font-weight:strong;">SaveBlock: Everyone cares about something. Why not save it? <br><br> <strong>View More</strong></a></h4>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@
                 <div class="col p-0">
                     <div class="categories__item categories__large__item set-bg"
                     data-setbg="img/categories/category-10.jpg">
-                        <h4><a href="#" style="color:white; font-weight:strong;">Subscribe Now: First time ever sports diorama for members only</a></h4>
+                        <h4><a href="subscribe.php" style="color:white; font-weight:strong;">Subscribe Now: First time ever sports diorama for members only <br><br> <strong>View More</strong></a></h4>
                     </div>
                 </div>
         </div>

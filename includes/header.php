@@ -59,11 +59,7 @@
                 <div class="col-lg-3">
                     <div class="header__right">
                         <ul class="header__right__widget">
-                            <li><a href="#"><span class="icon_heart_alt"></span>
-                                <div class="tip">2</div>
-                            </a></li>
-                            <li><a href="#"><span class="icon_bag_alt"></span>
-                                <div class="tip">2</div>
+                            <li><a href="shop-cart.php"><span class="icon_bag_alt"></span>
                             </a></li>
                         </ul>
                     </div>

@@ -9,6 +9,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Shop | Simpsons AniBlock</title>
 
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/simpleCart.js"></script>
+    <script src="js/simplecartjs-config.js"></script>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
@@ -104,8 +117,9 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="product__details__text">
-                        <h3>Simpsons AniBlock <span>Brand: SaveBlock</span></h3>
+                    
+                     <div class="simpleCart_shelfItem product">
+                        <h3 class="item_name">Simpsons AniBlock <span>Brand: SaveBlock</span></h3>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -114,7 +128,7 @@
                             <i class="fa fa-star"></i>
                             <span>( 17 reviews )</span>
                         </div>
-                        <div class="product__details__price">$ 55.0 <!--<span>$ 83.0</span>--></div>
+                        <div class="item_price">$ 55.0 <!--<span>$ 83.0</span>--></div>
                         <p>Your memories of the Simpsons are held dear. The show, not so much, but why not capture that with this quotable cube and mute that simpsonswave playlist for a moment. </p>
                         <div class="product__details__button">
                             <div class="quantity">
@@ -123,7 +137,7 @@
                                     <input type="text" value="1">
                                 </div>
                             </div>
-                            <a href="#" class="cart-btn"><span class="icon_bag_alt"></span> Add to cart</a>
+                           <span class="cart-btn"> <a href="javascript:;" class="item_add" style="color:white;">Add to cart</a></span>
                             <ul>
                                 <li><a href="#"><span class="icon_heart_alt"></span></a></li>
                                 <li><a href="#"><span class="icon_adjust-horiz"></span></a></li>
